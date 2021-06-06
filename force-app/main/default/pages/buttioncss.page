@@ -1,0 +1,9 @@
+<apex:page >
+<apex:pageblock >
+  <apex:pageBlockSection columns="3">
+  <apex:outputPanel ></apex:outputPanel>
+ <apex:outputPanel >Your Buttons Code here</apex:outputPanel>
+<apex:outputPanel ></apex:outputPanel>
+</apex:pageBlockSection>
+</apex:pageblock>
+</apex:page>

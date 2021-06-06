@@ -1,0 +1,11 @@
+<apex:page showHeader="false" lightningStylesheets="true" standardStylesheets="false" sidebar="false" docType="html-5.0" applyBodyTag="False" applyHtmlTag="False">
+
+<html>
+<head>
+<apex:slds />
+</head>
+<body class="slds-scope">
+...Lightning Design System Ready...
+</body>
+</html>
+</apex:page>

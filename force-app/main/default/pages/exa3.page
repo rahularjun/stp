@@ -1,0 +1,15 @@
+<apex:page standardController="account" recordSetVar="items">
+ <apex:pageblock title="My account contact">
+ <apex:pageblocktable value="{!items}" var="a">
+
+ <apex:column value="{!a.name}"/>
+  <apex:column value="{!a.industry}"/>
+ <apex:column >
+ <apex:dataList value="{!a.Opportunities}" var="b">
+ "{!b.closedate}"
+ 
+ </apex:datalist>
+ </apex:column>
+ </apex:pageBlockTable>
+ </apex:pageblock>
+</apex:page>

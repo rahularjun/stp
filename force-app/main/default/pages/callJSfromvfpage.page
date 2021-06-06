@@ -1,0 +1,15 @@
+<apex:page standardController="Account" >
+ 
+    <script>
+    function changecase(){
+        alert{'hi'};
+        }
+        </script>
+    <apex:form >
+        Input Text:
+  <apex:inputField id="id1" value="{!account.name}" ondblclick="changecase();"/>
+    </apex:form>
+    
+    
+    
+</apex:page>

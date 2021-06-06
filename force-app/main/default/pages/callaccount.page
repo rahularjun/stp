@@ -1,0 +1,27 @@
+<apex:page controller="c3" >
+<apex:pageBlock title="Account Details">
+
+
+<apex:tabPanel switchType="ajax">
+    <apex:tab label="direct accounts" labelWidth="400">
+      <apex:pageblockTable value="{!directacts}" var="a" >
+      <apex:column value="{!a.type}" />
+      <apex:column value="{!a.industry}" />
+      <apex:column value="{!a.phone}" />
+      <apex:column value="{!a.name}" />
+      </apex:pageblockTable>
+
+    </apex:tab>
+
+ <apex:tab label="channel accounts accounts" labelwidth="400">
+     <apex:pageblockTable value="{!channelacts}" var="a" >
+     <apex:column value="{!a.type}" />
+     <apex:column value="{!a.industry}" />
+     <apex:column value="{!a.phone}" />
+     <apex:column value="{!a.name}" />
+     </apex:pageblockTable>
+   
+    </apex:tab>
+       </apex:tabPanel>
+</apex:pageBlock>
+</apex:page>

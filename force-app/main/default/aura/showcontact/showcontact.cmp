@@ -1,0 +1,4 @@
+<aura:component controller = "getcontact" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="ContactList" type="Contact[]" />
+</aura:component>

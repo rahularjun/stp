@@ -1,0 +1,29 @@
+<apex:page Controller="display" lightningstylesheets="true" >
+<apex:slds />
+<div class="slds-scope">
+
+  <apex:form >
+      <apex:pageblock title="Configuration">
+        <apex:pageBlockSection collapsible="true">
+            <apex:outputLink value="/apex/DescribeAllObject" title="Describe Object">Describe Object</apex:outputLink>
+            <apex:outputLink value="/apex/ProfileSetting" title="Object Permissions">Object Permissions</apex:outputLink>
+        </apex:pageBlockSection>
+    </apex:pageblock>
+    <apex:pageblock title="Objects">
+        <apex:pageBlockSection collapsible="true" columns="1">
+        <apex:pageblocktable width="450px" value="{!objectSet}" var="key">
+            <apex:column headervalue="Object Tab" width="300px">       
+               {!customObjMap[key].label}
+            </apex:column>
+            <apex:column headervalue="New" width="50px">       
+               <a href="/{!customObjMap[key].keyPrefix}/e" target="_blank">New</a>
+            </apex:column>
+            <apex:column headervalue="List View" width="100px">       
+               <a href="/{!customObjMap[key].keyPrefix}/l" target="_blank">List View</a>
+            </apex:column>           
+        </apex:pageblocktable>
+        </apex:pageBlockSection>
+    </apex:pageblock>
+  </apex:form>  
+  </div>
+  </apex:page>

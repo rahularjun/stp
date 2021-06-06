@@ -1,0 +1,17 @@
+<apex:page >
+  <style>
+  .one{
+  color:yellow;
+   border: 5px solid red;
+  background-color:red;
+   padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  border-radius: 100px;
+  }
+  </style>
+ <div class="one">
+ This is a sample
+ </div>
+</apex:page>

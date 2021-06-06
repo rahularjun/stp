@@ -1,0 +1,10 @@
+<apex:page Controller="c4" >
+<apex:form >
+
+  {!msg}<br/>
+  
+  <apex:commandButton value="show  account info" action="{!showinfo}"/><br/>
+  {!a.name}<br/>
+  {!a.phone}
+  </apex:form>
+</apex:page>

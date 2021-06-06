@@ -1,0 +1,23 @@
+<apex:page standardController="account" lightningStylesheets="true"  >
+<apex:pageBlock title="Related With Tab" >
+<apex:tabPanel switchType="ajax" >
+
+    <apex:tab label="{!Account.name}" labelwidth="100">
+       <apex:detail relatedList="false" title="False" inlineEdit="true"/>
+    </apex:tab>
+ 
+        <apex:tab label="Contacts" labelwidth="100">
+              <apex:relatedList List="contacts" />
+        </apex:tab>
+ 
+    <apex:tab label="cases" labelwidth="100">
+        <apex:relatedList list="cases" />
+    </apex:tab>
+   
+   <apex:tab label="Opportunities" labelwidth="100">
+        <apex:relatedList list="Opportunities" />
+   </apex:tab>
+  
+  </apex:tabPanel>
+  </apex:pageBlock>
+  </apex:page>
